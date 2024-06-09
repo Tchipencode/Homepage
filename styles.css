@@ -1,0 +1,301 @@
+body{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: 0px;
+   padding:0px;
+   gap: 3rem;
+   flex:1;
+   height: 100%;
+}
+header{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1.5rem;
+   background: linear-gradient(160deg, #368af7 40%, white 0%);
+}
+h1{
+   position: absolute;
+   top:180px;
+   z-index: 2;
+   color: #d6d1d1;
+   font-size: 2.5rem;
+}
+.header-img{
+   position: relative;
+   top: 30px;
+   /* margin: 20px; */
+   z-index: 1;  
+}
+
+.project-name img{
+   width: 18px;
+   height: 18px;
+
+}
+
+.about-me{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.about-me-para h2{
+   text-align: center;
+}
+.about-me-para{
+   margin: 10px;
+}
+.social-icons{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 24px;
+   height: 24px;
+   gap: 1.2rem;
+   
+}
+main{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 16px;
+
+}
+main h2{
+   font-size: 2rem;
+}
+.project-cards{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 3rem;  
+}
+.project-card{
+   /* box-shadow:1px 2px 3px 2px rgba(0, 0, 0, 0.4); */
+}
+.project-screenshot{
+   padding: 40px 10px;
+   font-size: 1.5rem;
+   text-align: center;
+}
+.s-one{
+   background-color: #a083ce;
+}
+.s-two{
+   background-color: #e7b05e;
+}
+.s-three{
+   background-color: #4e9761;
+}
+.s-four{
+   background-color: #e27ed1;
+}
+.s-five{
+   background-color: #157da0;
+}
+.s-six{
+   background-color: #317458;
+}
+.project-info{
+   padding: 0px 20px;
+   box-shadow:1px 2px 3px 2px rgba(0, 0, 0, 0.4);
+}
+.project-name{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+.project-description{
+   padding: 0px 0px 20px 0px;
+}
+footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0px;
+   background-color: #368af7;
+   padding: 0 12px;
+   gap: 5rem;
+}
+.contact-info{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* padding: 12px; */
+
+}
+footer h2{
+   text-align: center;
+   font-size: 2rem;
+}
+.contact p{
+   padding-bottom: 20px;
+}
+.social-icons-footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 24px;
+   height: 24px;
+   gap: 1.2rem;
+   
+}
+@media (min-width:481px) {
+   header{
+      display: inline-block;
+      position: relative;
+      background: linear-gradient(170deg, #368af7 65%, white 0%);
+
+   }
+   h1{
+      position: absolute;
+      top:40px;
+      left: 320px;
+      z-index: 2;
+   }
+   .header-img{
+      
+      /* position: absolute; */
+      /* top: 20px; */
+      /* left: 30px; */
+      float: left;
+      margin: 10px;
+
+   }
+   .header-img picture img{
+      float: left;
+      margin: 10px;
+   }
+   .about-me{
+      margin:150px 80px 0px 80px;
+      padding: 50px;
+      box-shadow:1px 2px 3px 2px rgba(0, 0, 0, 0.4);
+      /* position:absolute; */
+      top: 100px;
+      /* text-align: justify; */
+      background-color: white;
+      display: block;
+   }
+   
+   .about-me-para{
+      /* text-align: justify; */
+      margin: 0px;
+   }
+   .social-icons{
+      justify-content: end;
+      float: inline-end;
+   }
+   /* .about-me p{
+      text-align: justify;
+   } */
+   .project-cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;  
+   }
+   main{
+      margin: 0px 100px;
+      align-items: start;
+   }
+
+   footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+      gap:20px;
+      padding: 40px; 
+   }
+   .contact-info{
+      align-items: start;
+   }
+   footer h2{
+      text-align: start;
+   }
+
+   .social-icons-footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: start;
+   }
+   .footer-img{
+      padding: 20px;
+   }
+
+   
+}
+@media (min-width:811px) {
+   header{
+      /* display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 15px;
+      gap: 1.5rem; */
+      background: linear-gradient(175deg, #368af7 65%, white 50%);
+   }
+   h1{
+      top:18rem;
+      left:7rem;
+   }
+   .header-img{
+      /* position: relative; */
+      margin: 20px 0px 20px 80px;
+   }
+   .about-me{
+      margin:90px 100px 50px 100px;
+      padding: 50px;
+      box-shadow:1px 2px 3px 2px rgba(0, 0, 0, 0.4);
+      /* position: absolute; */
+      /* top: 200px; */
+      z-index: 0;
+   }
+   .about-me-para h2{
+      text-align: start;
+   }
+   .project-cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;  
+   }
+   main{
+      margin: 0px 100px;
+      align-items: start;
+   }
+
+   footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+      gap:20px;
+      padding: 40px; 
+   }
+   .contact-info{
+      align-items: start;
+   }
+   footer h2{
+      text-align: start;
+   }
+
+   .social-icons-footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: start;
+   }
+   .footer-img{
+      /* padding: 20px; */
+   }
+
+   
+}
